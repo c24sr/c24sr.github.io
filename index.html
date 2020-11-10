@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
 
-<style type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 
-	#iPhone {
-		width:300px;
-		height:580px;
-		background-image:url(iphone.png);
-		background-size:cover;
-		background-repeat: no-repeat;
-	}
 
-	h1{
-		font-family: avenir;
-		font-size:64px;
-		color: orange;
-	}
+    <title></title>
+    <style type="text/css">
+    table {
+        width: 100%;
+    }
 
-	</style>
+    td {
+        text-align: center;
+       border: 1px solid white;
+    }
 
+    body {
+        background-color: lightblue;
+        margin: 0px;
+        background-image:url(background.png);
+        background-size:contain;
+    }
+
+    .box{
+    	background-color:lightblue;
+    	transition:1s;
+    }
+
+    .box:hover{
+    	background-color:lightgray;
+    	transition:.5s;
+    }
+a{
+	font-family: 'Patrick Hand', cursive;
+	font-size:70px;
+	color:white;
+	text-decoration:none;
+	font-family: 'Patrick Hand', cursive;
+
+}
+
+    </style>
 </head>
 
-
 <body>
-	<h1>click the phone!</h1>
-
-<div id="iPhone">
-
-</div>
-
-<script type="text/javascript">
-	iPhone.addEventListener("click", function(){ console.log("hi Sachi") 		
-		iPhone.style.backgroundImage="url(iPhone2.png)"; 	}) 
-
-
-</script>
-
-
-
-
+    <table>
+        <tr>
+            <td>
+                <a href="journal.html">
+                    <div class='box'>journal</div>
+                </a>
+            </td>
+            <td>
+                <a href="projects.html"><div class='box'>projects</div></a>
+            </td>
+            <td>
+                <a href="about.html"><div class='box'>about me</div></a>
+            </td>
+        </tr>
+    </table>
 </body>
-
 
 </html>
