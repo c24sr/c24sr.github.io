@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	#turkey{
+		width:550px;
+		height:500px;
+		background-image:url(turkey.png);
+		background-image:contain;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-image:url(turkey.gif)
+		background-image:contain;
+	}
+	body{
+			background-color:coral;
+			background-size:cover; 
+		}
+	p{
+		font-family: avenir;
+		font-size:50px;
+		color: white;
+	}
+</style>
+<body>
+<p>
+	HAPPY THANKSGIVING
+	(click the turkey)
+</p>
+<div id="turkey">
+</div>
+<script type="text/javascript">
+	turkey.addEventListener("click", function(){ console.log("hi Sachi") 		
+		turkey.style.backgroundImage="url(turkey.gif)"; 	}) 
+</script>
+<audio>
+	
+</audio>
+</body>
+</html>
