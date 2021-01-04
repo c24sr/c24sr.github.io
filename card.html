@@ -8,12 +8,18 @@
 		width:550px;
 		height:500px;
 		background-image:url(turkey.png);
-		background-image:contain;
 		background-size:cover;
 		background-repeat:no-repeat;
-		background-image:url(turkey.gif)
-		background-image:contain;
+		animation-duration: 3s;
 	}
+
+	@keyframes dance{
+
+		0%{background-image:url(turkey.gif);}
+		100%{background-image:url(turkey.png);}
+	}
+
+
 	body{
 			background-color:coral;
 			background-size:cover; 
@@ -32,8 +38,8 @@
 <div id="turkey">
 </div>
 <script type="text/javascript">
-	turkey.addEventListener("click", function(){ console.log("hi Sachi") 		
-		turkey.style.backgroundImage="url(turkey.gif)"; 	}) 
+	turkey.addEventListener("click", function(){ console.log("hi Sachi") ;
+		turkey.style.animationName = "dance"}) ;
 </script>
 <audio>
 	
